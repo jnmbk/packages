@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WORKDIR = "%s-1" % get.srcDIR()
+WorkDir = "%s-1" % get.srcDIR()
 printer_models = ("mp250", "mp280", "mp495", "mg5100", "mg5200", "ip4800", "mg6100", "mg8100")
 model_numbers = ("356", "369", "370", "373", "374", "375", "376", "377")
 
