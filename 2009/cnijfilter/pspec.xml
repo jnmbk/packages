@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cnijfilter</Name>
+        <Homepage>http://software.canon-europe.com</Homepage>
+        <Packager>
+            <Name>Uğur Çetin</Name>
+            <Email>jnmbk@users.sourceforge.net</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>driver</IsA>
+        <Summary>Canon IJ printer drivers</Summary>
+        <Description>These drivers support Canon PIXMA series iP4840, iP4850, MG5140, MG5150, MG5240, MG5250, MG6140, MG6150, MG8140, MG8150, MP250, MP280, MP282, MP495, MP499 printers.</Description>
+        <Archive sha1sum="610a888484a51885186e5aa833852acd6172e9fe" type="targz">http://files.canon-europe.com/files/soft40245/software/cnijfilter-source-3.40-1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cups</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>ghostscript</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cnijfilter</Name>
+        <RuntimeDependencies>
+            <Dependency>cups</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>ghostscript</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/lib/cups</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/cups</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-02-14</Date>
+            <Version>3.40</Version>
+            <Comment>First release.</Comment>
+            <Name>Uğur Çetin</Name>
+            <Email>jnmbk@users.sourceforge.net</Email>
+        </Update>
+    </History>
+</PISI>
